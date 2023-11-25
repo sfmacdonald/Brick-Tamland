@@ -49,7 +49,7 @@ When accessed, the website should reflect the following image:
         1. "Today's Forecast" shall present with the following information:
             -  date (formatted MM-DD-YYYY)
             - weather icon (displays icon from http://openweathermap.org/)
-            - temperature (formatted in Farenheit)
+            - temperature (formatted in Fahrenheit)
             - humidity (formatted in %)
             - wind speed (formatted in m/s)
         2. "5-Day Forecast" with the same information as "Today's Forecast"
