@@ -33,7 +33,7 @@ This web-based weather app has the following features and functions:
 
 The github repository may be found at https://github.com/sfmacdonald/Brick-Tamland
 
-The live URL for the working website is [insert URL]
+The live URL for the working website is https://sfmacdonald.github.io/Brick-Tamland/
 
 When accessed, the website should reflect the following image:
 
@@ -42,7 +42,7 @@ When accessed, the website should reflect the following image:
 ## Testing
 
 1. **Navigate to the Website**
-   - Visit [insert URL]
+   - Visit https://sfmacdonald.github.io/Brick-Tamland/
 
 2. **Search Location**
     - Insert location name (i.e. Boston, New York, Fairbanks, etc.) and select the "Search" button.
