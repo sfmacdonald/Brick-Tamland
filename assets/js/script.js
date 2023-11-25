@@ -64,9 +64,11 @@ function displayForecast(data) {
   for (let i = 0; i < data.list.length; i += 8) {
     var dayData = data.list[i];
     var tempInFahrenheit = (dayData.main.temp * 9/5) + 32;
+    var iconUrl = `http://openweathermap.org/img/w/${dayData.weather[0].icon}.png`;
 
     var forecastDayDiv = $('<div class="forecast-day"></div>').html(`
       <p>Date: ${new Date(dayData.dt * 1000).toLocaleDateString()}</p>
+      <img src="${iconUrl}" alt="${dayData.weather[0].description} Icon">
       <p>Temperature: ${tempInFahrenheit.toFixed(2)}°F</p>
       <p>Humidity: ${dayData.main.humidity}%</p>
       <p>Wind Speed: ${dayData.wind.speed} m/s</p>
