@@ -3,7 +3,7 @@ Find out if it's a "Here Comes The Sun" or "Here Comes The Rain Again" kind of d
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [Project Name](#brick-tamland)
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [Features](#features)
@@ -12,7 +12,7 @@ Find out if it's a "Here Comes The Sun" or "Here Comes The Rain Again" kind of d
 
 ## Description
 
-The purpose of the website is to view the current weather and 5-day forecast at any location insert into the search bar. Previous locations shall be stored for future reference and review so that the user does not have to input the search again.
+The purpose of the website is to view the current weather and 5-day forecast at any location inserted into the search bar. Previous locations shall be stored for future reference and review so that the user does not have to input the search again.
 
 ## Features
 
@@ -24,8 +24,8 @@ This web-based weather app has the following features and functions:
     - weather icon
     - temperature
     - wind speed
-    - humidity.
-2. Maintain a search history list that
+    - humidity
+2. Maintain a search history list that:
     - Adds the searched city to the history when a new search is performed.
     - Allow users to click on a city in the search history to view its current and future conditions.
   
@@ -37,49 +37,28 @@ The live URL for the working website is [insert URL]
 
 When accessed, the website should reflect the following image:
 
-![alt text](<insert png>)
+![Home](<./Screen Shot 2023-11-24 at 7.24.22 PM.png>)
 
 ## Testing
 
-1. **W**
+1. **Navigate to the Website**
    - Visit [insert URL]
 
-2. **X**
-    - 
-        1. 
-        2. 
-    - 
-
-3. **Z**
-    - 
-        1. 
-        2. 
-        3. 
-    - 
-        1. 
-            - 
-        2. 
-        3. 
-            - 
-
-
-User Story:
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-
-Acceptance Criteria:
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-API key: 2f5fee7f8b7747f31078b723051d688b
-- Please, use the endpoint api.openweathermap.org for your API calls
-- Example of API call:
-api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=2f5fee7f8b7747f31078b723051d688b
+2. **Search Location**
+    - Insert location name (i.e. Boston, New York, Fairbanks, etc.) and select the "Search" button.
+        1. "Today's Forecast" shall present with the following information:
+            -  date (formatted MM-DD-YYYY)
+            - weather icon (displays icon from http://openweathermap.org/)
+            - temperature (formatted in Farenheit)
+            - humidity (formatted in %)
+            - wind speed (formatted in m/s)
+        2. "5-Day Forecast" with the same information as "Today's Forecast"
+        3. The user shall note that the city input into the search field shall become a button in the list below the search. This is the historical search list that the user may select from in the future based on data in the local storage so that they do not require the need to input the same information over and over. 
+    - Example of information above displayed on website: 
+    ![New Search](<./Screen Shot 2023-11-24 at 7.25.52 PM.png>)
+        
+3. **Selecting A Previous Location**
+    - Select a city listed in the historical search list by clicking on the name
+        1. "Today's Forecast" & "5-Day Forecast" shall present to the user with the same data points as before however updated to the current time/date.
+    - Example of information above displayed on website: 
+        ![Select Old](<./Screen Shot 2023-11-24 at 7.29.17 PM.png>)
